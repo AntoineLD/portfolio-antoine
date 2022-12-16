@@ -1,0 +1,15 @@
+nav  a{ /* tous les liens a à l'intérieur de la balise nav */
+    float: left; /* effet flottant */
+    text-decoration: none; /* pas d'héritage avec effet souligné */
+    color: #ffffff; /* couleur du texte */
+    background: #86868675; /* couleur de fond */
+    height: 36px; /* hauteur */
+    line-height: 33px; /* interligne */
+    padding: 0 65px; /* marges intérieur */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* police d'écriture */
+    font-size: 18px; /* taille du texte */
+    transition: .5s; /* temps de transition lors du hover : une demi seconde */
+    }
+    nav  a:hover{ /* tous liens lors du survol dans la balise nav */
+    background: #fdbd329c; /* couleur de fond */
+    }

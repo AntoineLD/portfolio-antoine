@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+
+.topnav_page_contact
+{
+top: auto;
+left: auto;
+}
+
+.topnav_page_contact a
+{
+  font-family: "Roboto", sans-serif;
+  float: left;
+  display: block;
+  color: #d17600;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav_page_contact a.active /* Pour laisser le bouton en couleur orange*/
+{
+  background-color: #d17600;
+  color: white;
+  border-radius: 7px;
+}
+
+.topnav_page_contact a:hover/* faire un effet de couleur qui apparaît et disparaît lors du survol avec le curseur*/
+{
+    background-color: #b6b6b644;
+    color: black;
+    transition: .75s; 
+}
+
+.topnav_page_contact a:hover /* création de la transition voulu pour mon bouton retour*/
+{
+  transform: scale(1.05);
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #b6b6b644;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+form {
+  padding: 30px;
+  background-color: rgba(180, 180, 180, 0.452);
+  border-radius: 10px;
+  box-shadow: 6px 6px 8px rgba(206, 123, 0, 0.329);
+}
+form h1 {
+  font-size: 20px;
+}
+form .separation {
+  width: 100%;
+  height: 1px;
+  background-color: #d17600;
+}
+form .corps-formulaire {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+form .corps-formulaire .groupe {
+  position: relative; /* Pour mettre positionner l’élément dans le flux normal de la page */
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+form .corps-formulaire .gauche .groupe input {
+  margin-top: 5px;
+  padding: 10px 5px 10px 30px;
+  border: 1px solid #d17600;
+  outline-color: #d17600;
+  border-radius: 5px;
+}
+form .corps-formulaire .gauche .groupe i {
+  position: absolute; /* positionné par rapport à son parent le plus proche positionné */
+  left: 0;
+  top: 25px;
+  padding: 9px 8px;
+  color: #00a2ca;
+}
+form .corps-formulaire .droite {
+  margin-left: 40px;
+}
+form .corps-formulaire .droite .groupe {
+  height: 100%;
+}
+form .corps-formulaire .droite .groupe textarea {
+  margin-top: 5px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border: 2px solid #d17600;
+  outline: none;
+  border-radius: 5px;
+  resize: none;
+  height: 72%;
+}
+form .pied-formulaire button {
+  margin-top: 10px;
+  background-color: #d17600;
+  color: white;
+  font-size: 15px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+form .pied-formulaire button:hover {
+  transform: scale(1.05);
+}
+
+
+@media screen and (max-width: 920px) {      /* Ce bou de code permet de savoir si l'écran est inféreure a 920 px et si il ne l'ai pas il doit l'appliquer*/
+  form .corps-formulaire .droite {  /*responsive (pour téléphone*/
+    margin-left: 0px;
+  }
+}
+

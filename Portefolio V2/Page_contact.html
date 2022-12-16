@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Page de contact</title>
+    <link rel="stylesheet" href="style_page_contact.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"   
+      rel="stylesheet"
+    /><!--AU DESSUS / importation d'une blibliothèque d'icônes-->
+  </head>
+
+  <body>
+
+    <div class="topnav_page_contact" id="Retour">
+      <a href="Page Acceuil.html" class="active">Retour</a>
+      </div>
+
+      <form action="https://formspree.io/f/xnqyaqbr" method="post">
+      <br>
+      <h1>Contactez-moi</h1>
+      <div class="separation"></div> <!--Pour créer une séparation (un saut de ligne)-->
+      <div class="corps-formulaire">
+        <div class="gauche"> <!-- création de la boite gauche-->
+          <div class="groupe">
+            <label>Nom et Prénom</label>
+            <input type="text" autocomplete="off" />
+            <i class="fas fa-user"></i> <!--Importation d'une icône-->
+          </div>
+          <div class="groupe">
+            <label>Votre adresse e-mail</label>
+            <input type="text" autocomplete="off" />
+            <i class="fas fa-envelope"></i><!--Importation d'une icône-->
+          </div>
+          <div class="groupe">
+            <label>Votre téléphone</label>
+            <input type="text" autocomplete="off" />
+            <i class="fas fa-mobile"></i><!--Importation d'une icône-->
+          </div>
+        </div>
+
+        <div class="droite"><!-- création de la boite droite-->
+          <div class="groupe">
+            <label>Message</label>
+            <textarea placeholder="Saisissez ici..."></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="pied-formulaire" aligne="center">
+        <button>Envoyer le message</button>
+      </div>
+    </form>
+  </body>
+</html>
